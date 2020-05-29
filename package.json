@@ -1,0 +1,36 @@
+{
+    "name": "@hrasvaka/cli",
+    "description": "A 🚀 cli app for 🔗 hrasvaka.",
+    "version": "0.0.0",
+    "license": "UNLICENSED",
+    "bin": "dist/code/cli.js",
+    "homepage": "https://github.com/hrasvaka/cli#readme",
+    "bugs": "https://github.com/hrasvaka/cli/issues",
+    "author": {
+        "name": "Vasanth Developer",
+        "email": "vasanth@vasanthdeveloper.com",
+        "url": "https://vasanth.tech"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hrasvaka/cli.git"
+    },
+    "scripts": {
+        "start": "rm -rf ./dist && tsc -w",
+        "watch": "tsc -w",
+        "build": "rm -rf ./dist && tsc && pkg --out-path ./dist/packages . && node scripts/rename"
+    },
+    "keywords": [],
+    "dependencies": {},
+    "devDependencies": {
+        "@types/node": "^14.0.5",
+        "@typescript-eslint/eslint-plugin": "^3.0.2",
+        "@typescript-eslint/parser": "^3.0.2",
+        "eslint": "^7.1.0",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-plugin-prettier": "^3.1.3",
+        "pkg": "^4.4.8",
+        "prettier": "^2.0.5",
+        "typescript": "^3.9.3"
+    }
+}

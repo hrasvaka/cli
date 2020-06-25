@@ -5,8 +5,12 @@
 //   _____/   /_____/    |  Entry executable file for hrasvaka's cli.
 //                       |
 
+import keytar from 'keytar'
+
+import parse from './cli/index'
+
 async function main(): Promise<void> {
-    console.log('hey 👋')
+    const parsed = await parse()
 }
 
 main()
